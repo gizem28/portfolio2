@@ -2,8 +2,8 @@ import React from 'react'
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
-// import 'animate.css';
-// import TrackVisibility from 'react-on-screen';
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 const Contact = () => {
 
@@ -50,17 +50,17 @@ const formInitialDetails = {
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
-            <img src={contactImg} alt='Contact US'/>
-            {/* <TrackVisibility>
+           
+            <TrackVisibility>
               {({ isVisible }) =>
                 <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
               }
-            </TrackVisibility> */}
+            </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
-            {/* <TrackVisibility>
+            <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}> */}
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Get In Touch</h2>
                 <form onSubmit={handleSubmit}>
                   <Row>
@@ -88,9 +88,9 @@ const formInitialDetails = {
                     }
                   </Row>
                 </form>
-              {/* </div>
+              </div>
               }
-            </TrackVisibility> */}
+            </TrackVisibility>
           </Col>
         </Row>
       </Container>

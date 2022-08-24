@@ -4,14 +4,16 @@ import { ArrowRightCircle } from "react-bootstrap-icons"
 import headerImg from '../assets/img/header-img.svg'
 import 'animate.css'
 import TrackVisibility from 'react-on-screen';
+import Nav from 'react-bootstrap/Nav';
 
 export const Banner =()=>{
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const [index, setIndex] = useState(1);
-    const toRotate = [ "Web Developer", "Web Designer", "UI Designer" ];
+    // const [index, setIndex] = useState(1);
+    const [, setIndex] = useState(1);
+    const toRotate = [ "React Developer", "Frontend Developer", "Web Developer" ];
     const period = 2000;
   
     useEffect(() => {
@@ -19,8 +21,10 @@ export const Banner =()=>{
         tick();
       }, delta);
   
-      return () => { clearInterval(ticker) };
-    }, [text])
+    //   return () => { clearInterval(ticker) };
+    // }, [text])
+    return () => { clearInterval(ticker) };
+  })
   
     const tick = () => {
       let i = loopNum % toRotate.length;
@@ -55,10 +59,15 @@ export const Banner =()=>{
                       {({ isVisible }) =>
                       <div className={isVisible ? "animate__animated animate__rollIn" : ""}>
                         <span className="tagline">Welcome to my Portfolio</span>
-                    <h1>{`Hi I'm Gizem `}<span className="wrap">{text}</span></h1>
-                    <p>nficjbjink ewofjcmmo edkcno doijdn dwoeijcf okmd eoimjd 
+                    <h1>{`Hi I'm Gizem `} 
+                    <h2 className="wrap">{text}</h2></h1>
+                    <p>Web developer; with a passion for building user-friendly programs and resolving defects. Constantly looking for opportunities to grow as technology evolves.
+
                     </p>
-                    <button onClick={()=> console.log('connect')}>Let's connect <ArrowRightCircle size={25}/></button>
+                    <Nav.Link href='#connect'>
+                <button >Let’s Connect <ArrowRightCircle size={25}/></button>
+              </Nav.Link>
+                    {/* <button onClick={()=> console.log('connect')}>Let's connect <ArrowRightCircle size={25}/></button> */}
                     </div>}
                       </TrackVisibility>
                     </Col>

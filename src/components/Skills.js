@@ -1,11 +1,18 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import react from "../assets/img/reactjs-icon.svg";
+import bootstrap from "../assets/img/bootstrap 5.svg";
+import javascript from "../assets/img/javascript.svg";
+import html from "../assets/img/html-5.svg";
+import django from "../assets/img/django.svg";
+import redux from "../assets/img/redux.svg";
+import css from "../assets/img/css3.svg";
+import sass from "../assets/img/sass.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
+import colorSharp2 from "../assets/img/color-sharp2.png";
+
 
 export const Skills = () => {
   const responsive = {
@@ -34,23 +41,39 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>Creating web applications❣️<br></br> Maintaining, optimizing, troubleshooting, and improving websites</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image1" />
-                                <h5>Web Development</h5>
+                                <img src={react} alt="Image1" />
+                                <h5>React.js</h5>
+                            </div>
+                            <div className="item" id="big">
+                                <img src={javascript} alt="Image2" />
+                                <h5>Javascript</h5>
+                            </div>
+                            <div className="item" id="big">
+                                <img src={django} alt="Image3" />
+                                <h5>Django / Python</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image2" />
-                                <h5>Brand Identity</h5>
+                                <img src={redux} alt="Image4" />
+                                <h5>Redux</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image3" />
-                                <h5>Logo Design</h5>
+                                <img src={css} alt="Image5" />
+                                <h5>CSS 3</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image4" />
-                                <h5>Web Development</h5>
+                                <img src={html} alt="Image6" />
+                                <h5>HTML 5</h5>
+                            </div>
+                            <div className="item">
+                                <img src={sass} alt="Image7" />
+                                <h5>Sass / Scss</h5>
+                            </div>
+                            <div className="item">
+                                <img src={bootstrap} alt="Image7" />
+                                <h5>Bootstrap</h5>
                             </div>
                         </Carousel>
                     </div>
@@ -58,6 +81,8 @@ export const Skills = () => {
             </div>
         </div>
         <img className="background-image-left" src={colorSharp} alt="ImageLeft" />
+      <img className="background-image-right" src={colorSharp2} alt="ImageRight" />
+
     </section>
   )
 }
