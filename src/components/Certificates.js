@@ -89,7 +89,7 @@ export const Certificates = () => {
                 <Tab.Container id="cer-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Web Development</Nav.Link>
+                      <Nav.Link eventKey="first">Web</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="second">Frontend</Nav.Link>
