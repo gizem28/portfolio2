@@ -7,6 +7,9 @@ import projImg4 from "../assets/img/django-blog-app2.gif";
 import projImg5 from "../assets/img/API.png";
 import projImg6 from "../assets/img/movie_seat_booking.gif";
 import projImg7 from "../assets/img/calculater.gif";
+import projImg8 from "../assets/img/randomuser.gif";
+import projImg9 from "../assets/img/touplaces.gif";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -32,6 +35,11 @@ export const Projects = () => {
       description: "Users can search recipes by using the Edamam API and can see the details.",
       imgUrl: projImg3,
     },
+    {
+      title: "Tour App",
+      description: "Developed using React and deployed to Netlify",
+      imgUrl: projImg9,
+    },
   ];
 
   const projects2 = [
@@ -49,6 +57,13 @@ export const Projects = () => {
       title: "IOS Calculator",
       description: "In this project, the goal is to make a functional and visual clone of the calculator of an iOS device. Skills/Tools : HTML, CSS Frameworks, JS Dom Manipulation and Event Listeners.",
       imgUrl: projImg7,
+
+    },
+    {
+      title: "Random User App",
+      description: "",
+      imgUrl: projImg8,
+
     }
   ]
 
