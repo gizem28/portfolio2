@@ -9,6 +9,8 @@ import projImg6 from "../assets/img/movie_seat_booking.gif";
 import projImg7 from "../assets/img/calculater.gif";
 import projImg8 from "../assets/img/randomuser.gif";
 import projImg9 from "../assets/img/touplaces.gif";
+import projImg10 from "../assets/img/todo.gif";
+
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -35,6 +37,11 @@ export const Projects = () => {
       description: "Users can search recipes by using the Edamam API and can see the details.",
       imgUrl: projImg3,
     },
+    {
+      title: "ToDo App",
+      description: "To-do app coded with Redux.js, Reduxthunks, selectors, and styled components.",
+      imgUrl: projImg10,
+    },,
     {
       title: "Tour App",
       description: "Developed using React and deployed to Netlify",
